@@ -1,0 +1,12 @@
+spring:
+  datasource:
+    druid:
+      url: jdbc:mysql://localhost:3306/webflux?useUnicode=true&characterEncoding=utf-8&useSSL=false&serverTimezone=GMT%2B8&allowPublicKeyRetrieval=true
+      driver-class-name: com.mysql.cj.jdbc.Driver
+      username: root
+      password: 123456
+
+mybatis-plus:
+  mapper-locations: classpath:/mapper/*.xml
+  type-aliases-package: com.example.demo.pojo
+  type-enums-package: com.example.demo.myenum
